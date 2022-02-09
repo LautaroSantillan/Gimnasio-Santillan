@@ -56,7 +56,70 @@ nav h1 a {
     text-decoration: none;
 }
 
+.nombre{
+	transform: translateX(-100rem);
+	animation: slideIn 1s forwards;
+    text-align: center;
+}
 
+@keyframes slideIn {
+	from{}
+	to{transform: translateX(0);}
+}
+
+.nombre span {color: #2eff00;}
+
+nav ul {display: flex;}
+
+nav ul li {
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+}
+
+nav ul li:nth-child(1){animation-delay: 0s;}
+
+nav ul li:nth-child(2){animation-delay: .5s;}
+
+nav ul li:nth-child(3){animation-delay: 1s;}
+
+nav ul li:nth-child(4){animation-delay: 1.5s;}
+
+nav ul li:nth-child(5){animation-delay: 2s;}
+
+nav ul li a {
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 2px;
+    text-decoration: none;
+	color: white;
+}
+
+nav ul li a:last-child {margin-right: 0;}
+
+nav ul li a::before, nav ul li a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 0.031rem;
+	background-color: #2eff00;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+nav ul li a::before {
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after {
+	bottom: 0;
+	transform-origin: right;
+}
+
+nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
 
 .nav--hamburguesa {
     color: white;
@@ -147,7 +210,23 @@ nav h1 a {
     height: 3.125rem;
 }
 
+.redes ul li a {
+    display: inline-block;
+    padding: 0 1.25rem;
+    background: black;
+    color: white;
+    line-height: 3.125rem;
+    transition: 0.5s;
+    box-shadow: 0 0.188rem 0.313rem 0 rgba(0, 0, 0, 0.4)
+}
 
+.redes:hover a {filter: blur(2px);}
+
+.redes a:hover {
+    transform: translateY(-0.313rem) scale(1.05);
+    box-shadow: 0 0.313rem 0.313rem 0 rgba(0, 0, 0, 0.4); 
+    filter: none;
+}
 
 .Facebook:hover {background: #3b5999;}
 
@@ -186,7 +265,10 @@ nav h1 a {
     text-decoration: none;
 }
 
-
+.titular a:hover {
+    box-shadow: 0rem 0.313rem 0.625rem 0.125rem rgba(0, 0, 0, 0.4); 
+    transition: 0.5s;
+}
 
 .contenedor--tarjetas {
     display: grid;
@@ -243,7 +325,12 @@ nav h1 a {
     border: 0.063rem solid white;
 }
 
-
+.item--index:hover {
+    filter: brightness(100%);
+    transform: translateY(-0.313rem) scale(1.05);
+    box-shadow: 0px 0.313rem 0.313rem 0px rgba(0, 0, 0, 0.4); 
+    transition: all 0.5s ease-in-out;
+}
 
 .itema{
     background-image: url(/media/galeriagym1.jpg);
@@ -347,7 +434,11 @@ nav h1 a {
     padding: 0.313rem;
 }
 
-
+.proteina--info button:hover {
+    transform: translateY(-0.313rem) scale(1.05);
+    box-shadow: 0px 0.313rem 0.313rem 0px rgba(0, 0, 0, 0.5); 
+    transition: all 0.5s ease-in-out;
+}
 
 @media screen and (max-width: 1200px) {
     
@@ -428,7 +519,11 @@ nav h1 a {
     padding: 0.313rem;
 }
 
-
+.clases--info button:hover {
+    transform: translateY(-0.313rem) scale(1.05);
+    box-shadow: 0px 0.313rem 0.313rem 0px rgba(0, 0, 0, 0.8); 
+    transition: all 0.5s ease-in-out;
+}
 
 @media screen and (max-width: 1200px) {
     
@@ -473,7 +568,16 @@ nav h1 a {
     transition: all 1s ease;
 }
 
+.social ul li a:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.4);
+}
 
+.social ul li .social--facebook {background-color: #3b5998;}
+.social ul li .social--instagram {background-color: #e4405f;}
+.social ul li .social--whatsapp {background-color: #4dc247;}
+.social ul li .social--email {background-color: #666666;}
 
 .contenedor--contacto {  
     display: grid;
@@ -576,7 +680,11 @@ textarea {
     padding: 1.25rem;
 }
 
-
+.boton--form:hover {
+    cursor: pointer;
+    transform: translateY(-0.313rem) scale(1.01);
+    transition: all 0.5s ease;
+}
 
 @media screen and (max-width: 992px) {
     
@@ -618,7 +726,12 @@ textarea {
     height: 18.75rem;
 }
 
-
+.item:hover {
+    filter: brightness(100%);
+    transform: translateY(-0.313rem) scale(1.05);
+    box-shadow: 0px 0.313rem 0.313rem 0px rgba(0, 0, 0, 0.4); 
+    transition: all 0.5s ease-in-out;
+}
 
 .item1{
     background-image: url(./media/galeriagym5.jpeg);
