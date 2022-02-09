@@ -284,6 +284,7 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
     text-align: center;
     box-shadow: -0.063rem 0rem 0.313rem #0000001f;
     padding: 1.875rem 0rem;
+    opacity: 0.85;
 }
 
 .tarjetas i {
