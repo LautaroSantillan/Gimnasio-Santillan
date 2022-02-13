@@ -56,7 +56,14 @@ nav h1 a {
     text-decoration: none;
 }
 
+nav h1 a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .nombre{
+    font-size: 1.653rem;
+    font-weight: bold;
 	transform: translateX(-100rem);
 	animation: slideIn 1s forwards;
     text-align: center;
@@ -92,6 +99,11 @@ nav ul li a {
 	margin: 0 3rem;
 	position: relative;
 	letter-spacing: 2px;
+    text-decoration: none;
+	color: white;
+}
+
+nav ul li a:hover {
     text-decoration: none;
 	color: white;
 }
@@ -190,6 +202,7 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
 }
 
 .section1 h1 {
+    font-size: 1.875rem;
     line-height: 6.25rem;
     color: white;
 }
@@ -233,6 +246,8 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
 .Instagram:hover {background: #e4405f;}
 
 .redes h2 {
+    font-size: 1.875rem;
+    line-height: 6.25rem;
     margin: 0px 0.625rem;
     color: white;
 }
@@ -256,6 +271,7 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
     font-size: 4.375rem;
     font-style: italic;
     margin-bottom: 3.125rem;
+    font-weight: bold;
 }
 
 .titular a {
@@ -266,7 +282,7 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
 }
 
 .titular a:hover {
-    box-shadow: 0rem 0.313rem 0.625rem 0.125rem rgba(0, 0, 0, 0.4); 
+    box-shadow: 0rem 0.313rem 0.625rem 0.125rem rgba(0, 0, 0, 0.9); 
     transition: 0.5s;
 }
 
@@ -310,55 +326,25 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
     text-decoration: underline;
 }
 
-.galeria--index {
+.carousel-inner {
     width: 100%;
     padding: 1.25rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.938rem;
 }
 
 .item--index {
-    height: 18.75rem;
+    height: 37.5rem;
     object-fit: cover;
-    filter: brightness(70%);
-    border: 0.063rem solid white;
+    filter: brightness(75%);
+    border: 0.188rem solid white;
 }
 
 .item--index:hover {
     filter: brightness(100%);
-    transform: translateY(-0.313rem) scale(1.05);
-    box-shadow: 0px 0.313rem 0.313rem 0px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-0.313rem) scale(1.02);
     transition: all 0.5s ease-in-out;
 }
 
-.itema{
-    background-image: url(media/galeriagym1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.itemb{
-    background-image: url(media/galeriagym2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.itemc{
-    background-image: url(media/galeriagym3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.itemd{
-    background-image: url(media/galeriagym4.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
 @media screen and (max-width: 992px) {
-    
-    .galeria--index {grid-template-columns: repeat(2, 1fr);}
 
     .contenedor--tarjetas {grid-template-columns: auto;}
 
@@ -366,12 +352,10 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
 }
 
 @media screen and (max-width: 576px) {
-    
-    .galeria--index , .contenedor--tarjetas {grid-template-columns: auto;}
 
-    .titular h1 {font-size: 1.25rem;}
+    .titular h1 {font-size: 1.875rem;}
 
-    .titular a {font-size: 0.625rem;}
+    .titular a {font-size: 0.75rem;}
 }
 
 /* MAIN - PAGINA PRODUCTOS  */
@@ -635,37 +619,26 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
     grid-auto-flow: row;
 }
 
-.caja--comentarios {
-    margin: 0.625rem;
-}
+.caja--comentarios { margin: 0.625rem;}
 
 .formulario { 
     grid-area: formulario; 
-    width: 28.125rem;
-    box-sizing: border-box;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 0.625rem 1.25rem;
     margin-top: 1.25rem;
-    border-radius: 0.625rem;
+    border-radius: 1.25rem;
 }
 
 .formulario h2 {
-    color: white;
+    color: black;
     text-align: center;
-    margin: 0;
-    font-size: 1.875rem;
-    margin-bottom: 1.25rem;
 }
 
 input, textarea {
     width: 100%;
-    box-sizing: border-box;
     margin-bottom: 1.25rem;
     padding: 0.625rem;
-    font-size: 1.563rem;
-    border: none;
 }
+
+input {border: none;}
 
 textarea {
     min-height: 9.375rem;
@@ -676,8 +649,7 @@ textarea {
 
 .boton--form {
     background: #2eff00;
-    color: white;
-    padding: 1.25rem;
+    color: black;
 }
 
 .boton--form:hover {
