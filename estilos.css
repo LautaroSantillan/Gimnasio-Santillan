@@ -462,6 +462,13 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
     padding: 6.25rem 0.625rem 0.625rem;
 }
 
+.nav--clases {
+    margin: 10px 10px 0px;
+    justify-content: center;
+    font-weight: bold;
+    grid-column: span 2;
+}
+
 .clases {  
     display: grid;
     grid-template-columns: auto auto;
@@ -521,6 +528,8 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
 @media screen and (max-width: 1200px) {
     
     .contenedor--clases {grid-template-columns: auto;}
+
+    .nav--clases {grid-column: span 1;}
 }
 
 @media screen and (max-width: 576px) {
