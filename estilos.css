@@ -386,7 +386,7 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
     "proteina--img proteina--info";
     background-color: white;
     border: 0.125rem solid black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace, !important;
     margin: 0.625rem;
 }
 
@@ -472,7 +472,7 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
     "clases--img clases--info";
     background-color: white;
     border: 0.125rem solid black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace, !important;
     margin: 0.625rem;
 }
 
