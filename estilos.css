@@ -360,6 +360,13 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
 
 /* MAIN - PAGINA PRODUCTOS  */
 
+.caja--alerta {
+    margin: 10px 10px 0px;
+    text-align: center;
+    font-weight: bold;
+    grid-column: span 2;
+}
+
 .contenedor--productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -427,6 +434,8 @@ nav ul li a:hover::before, nav ul li a:hover::after {transform: scaleX(1);}
 @media screen and (max-width: 1200px) {
     
     .contenedor--productos {grid-template-columns: auto;}
+
+    .caja--alerta {grid-column: span 1;}
 }
 
 @media screen and (max-width: 576px) {
