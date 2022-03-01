@@ -201,7 +201,7 @@ nav ul li a::after {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.section1 h1 {
+.section1 h4 {
   font-size: 1.875rem;
   line-height: 6.25rem;
   color: white;
@@ -215,7 +215,7 @@ nav ul li a::after {
   flex-wrap: wrap;
   align-items: center;
 }
-.redes h2 {
+.redes h4 {
   font-size: 1.875rem;
   line-height: 6.25rem;
   margin: 0px 0.625rem;
@@ -264,7 +264,7 @@ nav ul li a::after {
   color: white;
   font-family: "Courier New", Courier, monospace;
 }
-.titular h1 {
+.titular h2 {
   font-size: 4.375rem;
   font-style: italic;
   margin-bottom: 3.125rem;
