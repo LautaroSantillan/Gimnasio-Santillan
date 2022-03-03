@@ -353,11 +353,11 @@ border: 0.188rem solid white;
 @media screen and (max-width: 992px) {
     .contenedor--tarjetas {grid-template-columns: auto;}
 
-    .titular h1 {font-size: 3.75rem;}
+    .titular h2 {font-size: 3.75rem;}
 }
 
 @media screen and (max-width: 576px) {
-    .titular h1 {font-size: 1.875rem;}
+    .titular h2 {font-size: 1.875rem;}
 
     .titular a {font-size: 0.75rem;}
 }
