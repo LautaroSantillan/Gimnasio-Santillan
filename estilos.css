@@ -340,13 +340,13 @@ nav ul li a::after {
     grid-template-columns: auto;
   }
 
-  .titular h1 {
+  .titular h2 {
     font-size: 3.75rem;
   }
 }
 @media screen and (max-width: 576px) {
-  .titular h1 {
-    font-size: 1.875rem;
+  .titular h2 {
+    font-size: 1.25rem;
   }
 
   .titular a {
