@@ -20,7 +20,7 @@ body {
   grid-auto-flow: row;
   grid-template-areas: "header" "main" "footer";
 }
-
+/* HEADER DE LOS HTML  */
 .header {
   grid-area: header;
   width: 100%;
@@ -186,10 +186,11 @@ nav ul li a::after {
     font-size: 1.25rem;
   }
 }
+/* MAIN DE LOS HTML  */
 .main {
   grid-area: main;
 }
-
+/* FOOTER DE LOS HTML  */
 .footer {
   grid-area: footer;
   background-image: linear-gradient(to bottom, black, #2eff00);
@@ -346,11 +347,20 @@ nav ul li a::after {
 }
 @media screen and (max-width: 576px) {
   .titular h2 {
-    font-size: 1.25rem;
+    font-size: 1.875rem;
   }
 
   .titular a {
     font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titular h2 {
+    font-size: 1.25rem;
+  }
+
+  .titular a {
+    font-size: 0.55rem;
   }
 }
 /* MAIN - PAGINA PRODUCTOS  */
@@ -445,6 +455,7 @@ nav ul li a::after {
     margin: 0.625rem auto;
   }
 }
+/* MAIN - PAGINA CLASES  */
 .contenedor--clases {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -534,6 +545,7 @@ nav ul li a::after {
     text-align: justify;
   }
 }
+/* MAIN - PAGINA CONTACTO  */
 .social {
   position: fixed;
   right: 0;
