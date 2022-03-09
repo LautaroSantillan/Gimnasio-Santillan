@@ -112,7 +112,7 @@ nav ul li a{
 padding: 1rem 0;
 margin: 0 3rem;
 position: relative;
-letter-spacing: 2px;
+letter-spacing: 0.125rem;
 text-decoration: none;
 color: white;
     &:hover{
@@ -233,11 +233,11 @@ align-items: center;
     h4{
     font-size: 1.875rem;
     line-height: 6.25rem;
-    margin: 0px 0.625rem;
+    margin: 0rem 0.625rem;
     color: white;
     }
     a:hover{
-    filter: blur(2px);
+    filter: blur(0.125rem);
     transform: translateY(-0.313rem) scale(1.05);
     box-shadow: 0 0.313rem 0.313rem 0 rgba(0, 0, 0, 0.4); 
     filter: none;
@@ -371,7 +371,7 @@ border: 0.188rem solid white;
 /* MAIN - PAGINA PRODUCTOS  */
 
 .caja--alerta {
-margin: 10px 10px 0px;
+margin: 0.625rem 0.625rem 0rem;
 text-align: center;
 font-weight: bold;
 grid-column: span 2;
@@ -433,7 +433,7 @@ margin: 0.625rem;
     padding: 0.313rem;
         &:hover{
         transform: translateY(-0.313rem) scale(1.05);
-        box-shadow: 0px 0.313rem 0.313rem 0px rgba(0, 0, 0, 0.5); 
+        box-shadow: 0rem 0.313rem 0.313rem 0rem rgba(0, 0, 0, 0.5); 
         transition: all 0.5s ease-in-out;
         }
     }
@@ -469,7 +469,7 @@ padding: 6.25rem 0.625rem 0.625rem;
 }
 
 .nav--clases {
-margin: 10px 10px 0px;
+margin: 0.625rem 0.625rem 0rem;
 justify-content: center;
 font-weight: bold;
 grid-column: span 2;
@@ -521,14 +521,13 @@ margin: 0.625rem;
     padding: 0.313rem;
         &:hover{
         transform: translateY(-0.313rem) scale(1.05);
-        box-shadow: 0px 0.313rem 0.313rem 0px rgba(0, 0, 0, 0.8); 
+        box-shadow: 0rem 0.313rem 0.313rem 0rem rgba(0, 0, 0, 0.8); 
         transition: all 0.5s ease-in-out;
         }
     }
 }
 
 @media screen and (max-width: 1200px) {
-    
     .contenedor--clases {grid-template-columns: auto;}
 
     .nav--clases {grid-column: span 1;}
@@ -593,7 +592,7 @@ $redes: (
 display: grid;
 grid-template-columns: auto;
 grid-template-rows: repeat(3, auto);
-gap: 0px;
+gap: 0rem;
 grid-auto-flow: row;
 grid-template-areas:
 "información"
@@ -607,7 +606,7 @@ grid-area: información;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: 1fr;
-gap: 0px;
+gap: 0rem;
 grid-auto-flow: row;
 grid-template-areas:
 "us mapa";
@@ -639,7 +638,7 @@ margin-top: 1.25rem;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: 1fr;
-gap: 0px;
+gap: 0rem;
 grid-auto-flow: row;
 }
 
@@ -719,7 +718,7 @@ height: 18.75rem;
     &:hover{
     filter: brightness(100%);
     transform: translateY(-0.313rem) scale(1.05);
-    box-shadow: 0px 0.313rem 0.313rem 0px rgba(0, 0, 0, 0.4); 
+    box-shadow: 0rem 0.313rem 0.313rem 0rem rgba(0, 0, 0, 0.4); 
     transition: all 0.5s ease-in-out;
     }
 }
